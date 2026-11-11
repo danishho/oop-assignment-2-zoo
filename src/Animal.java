@@ -24,14 +24,14 @@ public class Animal {
         setGender(gender);
 
        
-        if (age >= MIN_AGE && age <= MAX_AGE) {
+        if (validateAge(age)) {
            setAge(age);
         } else {
         	setAge(DEFAULT_AGE);
         }
 
         // Validate weight
-        if (weightKg > MIN_WEIGHT_KG && weightKg <= MAX_WEIGHT_KG) {
+        if (validateWeight(weightKg)) {
         	setWeightKg(weightKg);
         } else {
             setWeightKg(DEFAULT_WEIGHT_KG);
@@ -55,7 +55,7 @@ public class Animal {
     public boolean setAge(int age) {
     	
     	 // Validate age
-        if (age >= MIN_AGE && age <= MAX_AGE) {
+        if (validateAge(age)) {
             this.age = age;
             return true;
         }
@@ -77,7 +77,7 @@ public class Animal {
 
     public boolean setWeightKg(double weightKg) {
     	
-        if (weightKg > MIN_WEIGHT_KG && weightKg <= MAX_WEIGHT_KG) {
+        if (validateWeight(weightKg)) {
             this.weightKg = weightKg;
             return true;
         }
@@ -87,6 +87,14 @@ public class Animal {
 
     public static int getAnimalCount() {
         return animalCount;
+    }
+    
+    public static boolean validateAge(int age) {
+    	return age >= MIN_AGE && age <= MAX_AGE;
+    }
+    
+    public static boolean validateWeight(double weightKg) {
+    	return weightKg > MIN_WEIGHT_KG && weightKg <= MAX_WEIGHT_KG;
     }
 
     public void eat() {
