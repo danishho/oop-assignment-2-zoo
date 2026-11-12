@@ -1,4 +1,8 @@
 
+/**
+ * Represents a general animal with basic attributes and behaviours.
+ * Subclasses can extend this class to represent specific types of animals.
+ */
 
 public class Animal {
 
@@ -89,10 +93,12 @@ public class Animal {
         return animalCount;
     }
     
+    // Checks whether the received age is within the valid range.
     public static boolean validateAge(int age) {
     	return age >= MIN_AGE && age <= MAX_AGE;
     }
     
+    // Checks whether the received weight is within the valid range.
     public static boolean validateWeight(double weightKg) {
     	return weightKg > MIN_WEIGHT_KG && weightKg <= MAX_WEIGHT_KG;
     }
