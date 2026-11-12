@@ -1,6 +1,9 @@
-//Represents a fish as a type of animal.
-//Inherits common attributes and behaviours from the Animal class
-//and includes fish-specific attributes and behaviours.
+/*
+* Represents a fish as a type of animal.
+* Inherits common attributes and behaviours from the Animal class
+* and includes fish-specific attributes and behaviours.
+*/
+
 public class Fish extends Animal {
 
     private double maxDepthM;
