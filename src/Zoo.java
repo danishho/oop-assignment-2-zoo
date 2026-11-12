@@ -32,12 +32,13 @@ public class Zoo {
 
         System.out.println("\nTotal animals created: " + Animal.getAnimalCount());
 
-        // Step 6A: Gaia is Animal 1 on Zoo Card B.
+        // Step 6A: Gaia is Animal 1 on Zoo Card B
         System.out.println("\n=== STEP 6A: CHANGE SIMBA'S WEIGHT ===");
-        animal1.setWeightKg(170.0);
+        animal1.setWeightKg(160.0);
         animal1.eat();
         animal1.setWeightKg(7000.0);
         animal1.eat();
+        System.out.println();
         
         
     }
