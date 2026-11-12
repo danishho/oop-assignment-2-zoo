@@ -1,44 +1,44 @@
+/*
+* Represents a bird as a type of animal.
+* Inherits common attributes and behaviours from the Animal class
+* and includes bird-specific attributes and behaviours.
+*/
 
 public class Bird extends Animal {
 
-    //attribute
     private double wingSpanCm;
 
-    //constructor
+    // Constructor
     public Bird(String name, int age, String gender, double weightKg, double wingSpanCm) {
         super(name, age, gender, weightKg);
         setWingSpanCm(wingSpanCm);
     }
 
-    //getter
     public double getWingSpanCm() {
         return wingSpanCm;
     }
 
-    //setter
     public void setWingSpanCm(double wingSpanCm) {
         this.wingSpanCm = wingSpanCm;
     }
 
-    //override eat() method from Animal
+    // Override eat() method from Animal class
     @Override
     public void eat() {
         System.out.println(getName() + " pecks at seeds.");
     }
 
-    //fly method
     public void fly() {
-        System.out.println(getName() + " flies with a wingspan of "
-                + getWingSpanCm() + " cm.");
+        System.out.print(getName() + " flies with a wingspan of " + getWingSpanCm() + " cm.");
     }
 
-    //check whether bird can fly through a gap
+    // Checks whether the bird can fly through a gap
     public void canFlyThroughGap(double gapWidthCm) {
 
         if (gapWidthCm <= getWingSpanCm()) {
             System.out.println(getName() + " can fly through the gap.");
         } else {
-            System.out.println(getName() + " cannot fly through the gap.");
+            System.out.println("ERROR :: " + getName() + " cannot fly through the gap because the gap is too narrow.");
         }
     }
 }

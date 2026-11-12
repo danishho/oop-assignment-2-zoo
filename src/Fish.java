@@ -1,3 +1,4 @@
+// Represents a fish that inherits from Animal that can eat, swim and dive
 public class Fish extends Animal {
 
     private double maxDepthM;
@@ -8,16 +9,15 @@ public class Fish extends Animal {
         setMaxDepthM(maxDepthM);
     }
 
-    // Getter
     public double getMaxDepthM() {
         return maxDepthM;
     }
 
-    // Setter
     public void setMaxDepthM(double maxDepthM) {
         this.maxDepthM = maxDepthM;
     }
 
+    // Overrides the eat method from Animal class
     @Override
     public void eat() {
         System.out.println(getName() + " nibbles plankton.");
@@ -26,14 +26,15 @@ public class Fish extends Animal {
     public void swim() {
         System.out.println(getName() + " swims down to " + getMaxDepthM() + " m.");
     }
-
+    
+    // Checks whether the fish can dive to the given depth
     public void canDive(double depthM) {
         if (depthM <= getMaxDepthM()) {
             System.out.println(getName() + " can dive to " + depthM + " m.");
         } 
         
         else {
-            System.out.println("Error: " + getName() + " cannot dive to " + depthM + " m. Maximum depth is " + getMaxDepthM() + " m.");
+            System.out.println("ERROR :: Depth exceeds maximum diving depths.");
 		}
 	}
 }
