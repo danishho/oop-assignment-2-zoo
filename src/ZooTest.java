@@ -92,7 +92,7 @@ public class ZooTest {
 
 
         // Custom Test 1: Test Bird canFlyThroughGap()
-        System.out.println("\n===== Custom Test: Bird =====");
+        System.out.println("\n===== O1: Bird =====");
 
         Bird bird3 = new Bird("Rio", 4, "Male", 0.9, 35.0);
 
@@ -101,7 +101,7 @@ public class ZooTest {
 
 
         // Custom Test 2: Test Fish canDive()
-        System.out.println("\n===== Custom Test: Fish =====");
+        System.out.println("\n===== O1: Fish =====");
 
         Fish fish3 = new Fish("Finn", 2, "Female", 0.8, 30.0);
 
