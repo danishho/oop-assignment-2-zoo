@@ -1,8 +1,8 @@
-
 /*
- * Bird class represents a bird in the zoo.
- * It inherits attributes and methods from Animal class.
- */
+* Represents a bird as a type of animal.
+* Inherits common attributes and behaviours from the Animal class
+* and includes bird-specific attributes and behaviours.
+*/
 
 public class Bird extends Animal {
 
@@ -28,7 +28,6 @@ public class Bird extends Animal {
         System.out.println(getName() + " pecks at seeds.");
     }
 
-    // Displays the bird's wingspan when flying
     public void fly() {
         System.out.print(getName() + " flies with a wingspan of " + getWingSpanCm() + " cm.");
     }
