@@ -28,7 +28,6 @@ public class Bird extends Animal {
         System.out.println(getName() + " pecks at seeds.");
     }
 
-    // Displays the bird's wingspan when flying
     public void fly() {
         System.out.print(getName() + " flies with a wingspan of " + getWingSpanCm() + " cm.");
     }
