@@ -1,4 +1,6 @@
-// Represents a fish that inherits from Animal that can eat, swim and dive
+//Represents a fish as a type of animal.
+//Inherits common attributes and behaviours from the Animal class
+//and includes fish-specific attributes and behaviours.
 public class Fish extends Animal {
 
     private double maxDepthM;
