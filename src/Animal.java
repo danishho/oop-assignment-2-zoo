@@ -7,9 +7,9 @@
 public class Animal {
 
     private String name;
-    private int age = 0;
+    private int age;
     private String gender ;
-    private double weightKg = 1.0;
+    private double weightKg;
 
     private static int animalCount = 0;
 
