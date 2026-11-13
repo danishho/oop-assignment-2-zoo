@@ -1,3 +1,9 @@
+/**
+ * Represents a testing class for the Zoo program.
+ * Tests the Animal, Bird, and Fish classes using normal,
+ * boundary, and invalid values to ensure the methods
+ * and behaviours work correctly.
+ */
 public class ZooTest {
 
     public static void main(String[] args) {

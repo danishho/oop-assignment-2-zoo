@@ -1,7 +1,7 @@
 
 /**
  * Represents a zoo that contains different types of animals.
- * Creates Animal, Bird, and Fish objects and demonstrates
+ * Creates Animal, Bird and Fish objects and demonstrates
  * their behaviours using inheritance and polymorphism.
  */
 public class Zoo {
@@ -37,7 +37,6 @@ public class Zoo {
         fish.canDive(30.0);
 
         System.out.println("\n=== STEP 5: ONE ARRAY, ONE LOOP ===");
-        // Store all five animals in one Animal array
         Animal[] animals = {animal1, animal2, animal3, bird, fish};
         for (int i = 0; i < animals.length; i++) {
             animals[i].eat();
