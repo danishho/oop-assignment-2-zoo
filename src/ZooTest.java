@@ -105,7 +105,6 @@ public class ZooTest {
         bird3.canFlyThroughGap(40.0);
         bird3.canFlyThroughGap(30.0);
        
-
         // Custom Test 2: Test Fish canDive()
         System.out.println("\n===== O1: Fish =====");
 
