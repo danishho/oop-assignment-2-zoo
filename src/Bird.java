@@ -35,7 +35,7 @@ public class Bird extends Animal {
     // Checks whether the bird can fly through a gap
     public void canFlyThroughGap(double gapWidthCm) {
 
-        if (gapWidthCm <= getWingSpanCm()) {
+        if (gapWidthCm >= getWingSpanCm()) {
             System.out.println(getName() + " can fly through the gap.");
         } else {
             System.out.println("ERROR :: " + getName() + " cannot fly through the gap because the gap is too narrow.");
